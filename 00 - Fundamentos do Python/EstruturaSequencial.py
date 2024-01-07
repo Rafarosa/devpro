@@ -1,3 +1,6 @@
+import math
+#pi = math.pi
+#print(pi)
 """
 1 - Faça um Programa que mostre a mensagem "Alo mundo" na tela.
 
@@ -22,30 +25,102 @@ print(f'A soma dos número {pedir_num01} e {pedir_num02} é igual a {soma}')
 """
 """
 4 - Faça um Programa que peça as 4 notas bimestrais e mostre a média.
-"""
 
+nota_bi1 = float(input('Informa sua nota no primeiro bimestre: '))
+nota_bi2 = float(input('Informa sua nota no segundo bimestre: '))
+nota_bi3 = float(input('Informa sua nota no terceiro bimestre: '))
+nota_bi4 = float(input('Informa sua nota no quarto bimestre: '))
+
+media_bimestre = (nota_bi1 + nota_bi2 + nota_bi3 + nota_bi4) / 4
+
+print(f'A media do ano foi {media_bimestre:.2f}')
+"""
 """
 5 - Faça um Programa que converta metros para centímetros.
 
+valor_metros = float(input('informe o valor em metros a ser convertido: '))
+converte_centimetors = valor_metros * 100
+
+print(f'{valor_metros}m é igual a {converte_centimetors}cm')
+"""
+"""
 6 - Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
 
+raio = float(input('Informe o raio do circulo: '))
+
+area_circulo = pi * raio**2
+
+print(f'Com o Raio igual a {raio}, a área do circulo é igual a {area_circulo:.2f5}')
+
+"""
+"""
 7 - Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
 
-8 - Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+lado_quadrado = float(input('Informe o lado do quadaro: '))
 
+area_quadrado= lado_quadrado**2
+
+print(f'A área do quadrado é {2 * area_quadrado}')
+
+"""
+"""
+8 - Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. 
+Calcule e mostre o total do seu salário no referido mês.
+Valor_hora = float(input('Informe o valor em R$ da sua hora trabalhada: '))
+qtd_horas_mes = float(input('informe a quantidade de horas trabalhadas no mês: '))
+
+total_salario_mes = Valor_hora * qtd_horas_mes
+
+print(f'Seu salário será de R${total_salario_mes:.2f}')
+"""
+"""
 9 - Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.
 C = 5 * ((F-32) / 9).
+fah = float(input('informe a temperatua em graus Fahrenheit(◦F): '))
 
+convert_fah_cel = 5 * ((fah - 32) / 9)
+
+print(f'{fah}◦F equivalem a {convert_fah_cel:.2f}◦C')
+"""
+"""
 10 - Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.
+cel = float(input('informe a temperatua em graus Celsius(◦F)'))
 
+convert_cel_fah = (cel * (9/5)) + 32
+
+print(f'{cel}◦F equivalem a {convert_cel_fah:.2f}◦F')
+
+"""
+"""
 11 - Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
 A)o produto do dobro do primeiro com metade do segundo .
 B)a soma do triplo do primeiro com o terceiro.
 C)o terceiro elevado ao cubo.
+num_int_1 = int(input('Informe o primeiro número interiro: '))
+num_int_2 = int(input('Informe o segundo número interiro: '))
+num_float_1 = float(input('Informe um número real: '))
 
-12 - Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula: (72.7*altura) - 58
+questao_a = (2 * num_int_1) * (num_int_2 / 2)
+questao_b = (3 * num_int_1) + num_float_1
+questao_c = num_float_1 ** 3
 
-13 - Tendo como dado de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+print(f'A) o produto do dobro do primeiro com metade do segundo é {questao_a}')
+print(f'B) a soma do triplo do primeiro com o terceiro é {questao_b}')
+print(f'C)  terceiro elevado ao cubo é {questao_c:.2f}')
+"""
+
+"""
+12 - Tendo como dados de entrada a altura de uma pessoa, 
+construa um algoritmo que calcule seu peso ideal, 
+usando a seguinte fórmula: (72.7*altura) - 58
+"""
+altura = float(input('Informe sua altura: '))
+
+peso_ideal = ()
+"""
+13 - Tendo como dado de entrada a altura (h) de uma pessoa, 
+construa um algoritmo que calcule seu peso ideal, 
+utilizando as seguintes fórmulas:
 A) Para homens: (72.7*h) - 58
 B) Para mulheres: (62.1*h) - 44.7
 
