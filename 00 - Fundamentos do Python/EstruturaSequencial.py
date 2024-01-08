@@ -113,17 +113,28 @@ print(f'C)  terceiro elevado ao cubo é {questao_c:.2f}')
 12 - Tendo como dados de entrada a altura de uma pessoa, 
 construa um algoritmo que calcule seu peso ideal, 
 usando a seguinte fórmula: (72.7*altura) - 58
-"""
 altura = float(input('Informe sua altura: '))
 
-peso_ideal = ()
+peso_ideal = (72.7 * altura) - 58
+
+print(f'Seu peso ideal é {peso_ideal}')
+"""
 """
 13 - Tendo como dado de entrada a altura (h) de uma pessoa, 
 construa um algoritmo que calcule seu peso ideal, 
 utilizando as seguintes fórmulas:
 A) Para homens: (72.7*h) - 58
 B) Para mulheres: (62.1*h) - 44.7
+"""
+altura_pessoa = float(input('Informe sua altura: '))
 
+peso_ideal_h = (72.7 * altura_pessoa) - 58
+peso_ideal_m = (62.1 * altura_pessoa) - 44.7
+
+print(f'Peso ideal para homens é de {peso_ideal_h:.2f}Kg')
+print(f'Peso ideal para mulheres é de {peso_ideal_m:.2f}Kg')
+
+"""
 14 - João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. 
 Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. 
 João precisa que você faça um programa que leia a variável peso (peso de peixes) e calcule o excesso. 
