@@ -165,20 +165,7 @@ E) calcule os descontos e o salário líquido, conforme a tabela abaixo:
 - Sindicato ( 5%) : R$
 = Salário Liquido : R$
 Obs.: Salário Bruto - Descontos = Salário Líquido.
-"""
-valor_hora_trabalhada = float(input('Informe o valor de sua hora trabalhada: R$'))
-horas_trabalhadas_mes = str(input('Informe as horas trabalhadas no formato (HH:MM): '))
 
-horas, minutos = horas_trabalhadas_mes.split(':')
-horas_trabalhadas_mes_inteiro = (int(horas) + (int(minutos) /60))
-
-salario_bruto = valor_hora_trabalhada * horas_trabalhadas_mes_inteiro
-ir = salario_bruto * 0.11
-inss = salario_bruto * 0.08
-sindicato = 
-
-
-"""
 16 - Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
 
 17 - Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00.
